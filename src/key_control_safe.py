@@ -29,7 +29,7 @@ while(1):
         msg.velocity = 0
     if (currchar == 99):
         turn = 0
-    if (currchar == 113):
+    if (currchar == 32):
         break
     msg.angle = turn
     DriveParamPublisher.publish(msg)
