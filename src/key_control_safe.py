@@ -30,6 +30,8 @@ while(1):
     if (currchar == 99):
         turn = 0
     if (currchar == 32):
+        msg.velocity = 0
+        turn = 0
         EStopPublisher.publish(False)
         break
     msg.angle = turn
