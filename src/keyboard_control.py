@@ -23,12 +23,12 @@ screen.blit(background, (0, 0))
 pygame.display.flip()
 rospy.init_node("keyboard_control")
 #Publisher init
-DriveParamPublisher = rospy.Publisher("drive_parameters", drive_param, queue_size=10)
+DriveParamPublisher = rospy.Publisher("drive_parameters", drive_params, queue_size=10)
 EStopPublisher = rospy.Publisher("eStop", Bool, queue_size=10)
 
 # Event loop
 estopmsg = Bool()
-msg = drive_param()
+msg = drive_params()
 turn = 0
 velocity = 0
 
